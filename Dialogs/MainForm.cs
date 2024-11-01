@@ -14,7 +14,7 @@ namespace MsExcelConverter.Dialogs
 {
     public partial class MainForm : Form
     {
-        private const string APP_TITLE = "Конвертирование файлов MS Office Excel";
+        private const string APP_TITLE = "Конвертирование файлов Microsoft Office Excel 1997-2003";
         private const string CONVERT = "Конвертировать";
         private const string CANCEL = "Отмена";
 
@@ -291,7 +291,7 @@ namespace MsExcelConverter.Dialogs
             }
         }
 
-        private void progressTimer_Tick(object sender, EventArgs e)
+        private void ProgressTimer_Tick(object sender, EventArgs e)
         {
             WriteToConsole(progressText);
             SetProgress(progressPercentage);
