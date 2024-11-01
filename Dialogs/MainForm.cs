@@ -5,6 +5,8 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using MsExcelConverter.Utils;
+using Button = System.Windows.Forms.Button;
+using CheckBox = System.Windows.Forms.CheckBox;
 using Excel = Microsoft.Office.Interop.Excel;
 using TextBox = System.Windows.Forms.TextBox;
 
@@ -314,7 +316,7 @@ namespace MsExcelConverter.Dialogs
             else
             {
                 progressBar.Value = (int)value;
-                Text = APP_TITLE + " - " + value.ToString() + " %";
+                Text = string.Format("{0} - Конвертирование: {1} %", APP_TITLE, value);
             }
         }
 
