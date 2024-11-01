@@ -73,17 +73,17 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(881, 655);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(978, 704);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // progressBar
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.progressBar, 2);
             this.progressBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.progressBar.Location = new System.Drawing.Point(3, 565);
+            this.progressBar.Location = new System.Drawing.Point(3, 614);
             this.progressBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(875, 23);
+            this.progressBar.Size = new System.Drawing.Size(972, 23);
             this.progressBar.TabIndex = 8;
             // 
             // sourceLabel
@@ -92,19 +92,21 @@
             this.sourceLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sourceLabel.Location = new System.Drawing.Point(3, 0);
             this.sourceLabel.Name = "sourceLabel";
-            this.sourceLabel.Size = new System.Drawing.Size(434, 30);
+            this.sourceLabel.Size = new System.Drawing.Size(483, 30);
             this.sourceLabel.TabIndex = 0;
             this.sourceLabel.Text = "Источник:";
+            this.sourceLabel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // destLabel
             // 
             this.destLabel.AutoSize = true;
             this.destLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.destLabel.Location = new System.Drawing.Point(443, 0);
+            this.destLabel.Location = new System.Drawing.Point(492, 0);
             this.destLabel.Name = "destLabel";
-            this.destLabel.Size = new System.Drawing.Size(435, 30);
+            this.destLabel.Size = new System.Drawing.Size(483, 30);
             this.destLabel.TabIndex = 1;
             this.destLabel.Text = "Конечная директория:";
+            this.destLabel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // sourcePathTextBox
             // 
@@ -113,25 +115,25 @@
             this.sourcePathTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.sourcePathTextBox.Multiline = true;
             this.sourcePathTextBox.Name = "sourcePathTextBox";
-            this.sourcePathTextBox.Size = new System.Drawing.Size(434, 87);
+            this.sourcePathTextBox.Size = new System.Drawing.Size(483, 87);
             this.sourcePathTextBox.TabIndex = 2;
             this.sourcePathTextBox.TextChanged += new System.EventHandler(this.SourcePathTextBox_TextChanged);
             // 
             // destPathTextBox
             // 
             this.destPathTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.destPathTextBox.Location = new System.Drawing.Point(443, 34);
+            this.destPathTextBox.Location = new System.Drawing.Point(492, 34);
             this.destPathTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.destPathTextBox.Multiline = true;
             this.destPathTextBox.Name = "destPathTextBox";
             this.destPathTextBox.ReadOnly = true;
-            this.destPathTextBox.Size = new System.Drawing.Size(435, 87);
+            this.destPathTextBox.Size = new System.Drawing.Size(483, 87);
             this.destPathTextBox.TabIndex = 3;
             // 
             // sourceBrowserButton
             // 
             this.sourceBrowserButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.sourceBrowserButton.Location = new System.Drawing.Point(335, 129);
+            this.sourceBrowserButton.Location = new System.Drawing.Point(384, 129);
             this.sourceBrowserButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.sourceBrowserButton.Name = "sourceBrowserButton";
             this.sourceBrowserButton.Size = new System.Drawing.Size(102, 40);
@@ -144,7 +146,7 @@
             // destBrowserButton
             // 
             this.destBrowserButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.destBrowserButton.Location = new System.Drawing.Point(756, 129);
+            this.destBrowserButton.Location = new System.Drawing.Point(853, 129);
             this.destBrowserButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.destBrowserButton.Name = "destBrowserButton";
             this.destBrowserButton.Size = new System.Drawing.Size(122, 40);
@@ -164,13 +166,13 @@
             this.progressTextBox.Name = "progressTextBox";
             this.progressTextBox.ReadOnly = true;
             this.progressTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.progressTextBox.Size = new System.Drawing.Size(875, 380);
+            this.progressTextBox.Size = new System.Drawing.Size(972, 429);
             this.progressTextBox.TabIndex = 6;
             // 
             // startButton
             // 
             this.startButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.startButton.Location = new System.Drawing.Point(714, 608);
+            this.startButton.Location = new System.Drawing.Point(811, 657);
             this.startButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(164, 43);
@@ -183,7 +185,7 @@
             // 
             this.overwriteCheckBox.AutoSize = true;
             this.overwriteCheckBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.overwriteCheckBox.Location = new System.Drawing.Point(16, 608);
+            this.overwriteCheckBox.Location = new System.Drawing.Point(16, 657);
             this.overwriteCheckBox.Margin = new System.Windows.Forms.Padding(16, 4, 3, 4);
             this.overwriteCheckBox.Name = "overwriteCheckBox";
             this.overwriteCheckBox.Size = new System.Drawing.Size(299, 43);
@@ -202,13 +204,13 @@
             // 
             // progressTimer
             // 
-            this.progressTimer.Tick += new System.EventHandler(this.progressTimer_Tick);
+            this.progressTimer.Tick += new System.EventHandler(this.ProgressTimer_Tick);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 655);
+            this.ClientSize = new System.Drawing.Size(978, 704);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
